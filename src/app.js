@@ -19,6 +19,8 @@ client.flushdb( function (err, succeeded) {
 });
 
 var prev = 0; var sum =0;
+
+
 function generatePrimeNumbers(integer) {
 
     if(integer <= 1)
@@ -39,6 +41,8 @@ function generatePrimeNumbers(integer) {
 
         }
     }
+
+
 }
 
 generatePrimeNumbers(Number(process.argv.slice(2)));
@@ -57,8 +61,8 @@ client.lrange('sumList', 0, -1, function (error, items) {
     items.forEach(function (item) {
         sumList.push(Number(item));
     })
-    console.log("Number List "+numList.toString());
-    console.log("Sum List "+sumList.toString());
+        console.log("Number List "+numList.toString());
+        console.log("Sum List "+sumList.toString());
     calcMean(numList);
 })
 
