@@ -1,0 +1,23 @@
+{
+  "name": "fireeye",
+  "version": "1.0.0",
+  "description": "FireEye Coding question",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrmvignesh/FireEye_CodingAssessment.git"
+  },
+  "author": "Vignesh Ramkumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrmvignesh/FireEye_CodingAssessment/issues"
+  },
+  "homepage": "https://github.com/jrmvignesh/FireEye_CodingAssessment#readme",
+  "dependencies": {
+    "prompt": "^1.0.0",
+    "redis": "^2.8.0"
+  }
+}
