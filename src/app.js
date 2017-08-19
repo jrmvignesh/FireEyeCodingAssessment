@@ -20,6 +20,16 @@ client.flushdb( function (err, succeeded) {
 
 var prev = 0; var sum =0;
 
+/*module.exports = {
+    sayHello: function(){
+        return 'hello';
+    },
+    addNumbers: function(value1, value2){
+        return value1 + value2;
+    }
+}*/
+
+
 
 function GeneratePrimeNumbers(integer) {
 
@@ -42,19 +52,22 @@ function GeneratePrimeNumbers(integer) {
         }
     }
 
+    var numList = [];
+    client.lrange('myList', 0, -1, function (error, items) {
+        if (error) throw error
+        items.forEach(function (item) {
+            numList.push(Number(item));
+        })
+    })
 
+    return numList;
 }
 
-GeneratePrimeNumbers(Number(process.argv.slice(2)));
+var numList = GeneratePrimeNumbers(Number(process.argv.slice(2)));
 
-var numList = [];var sumList = [];
- client.lrange('myList', 0, -1, function (error, items) {
-       if (error) throw error
-      items.forEach(function (item) {
-                numList.push(Number(item));
-    })
- })
+console.log(numList[0] + " --> " + numList[numList.length-1]);
 
+var sumList = [];
 
 client.lrange('sumList', 0, -1, function (error, items) {
     if (error) throw error
@@ -68,14 +81,31 @@ client.lrange('sumList', 0, -1, function (error, items) {
 
 function calcMean(arr) {
     prompt.start();
-    prompt.get(['lowerBound', 'upperBound'], function (err, result) {
-        var result = calcSumAvg(result.lowerBound, result.upperBound, arr);
-        console.log("Result Object : "+JSON.stringify(result));
-        if(result instanceof Object || result == undefined)
-            calcMean(arr);
-    });
 
-}
+    console.log('\nEnter 1 to continue, 2 to exit');
+
+
+    prompt.get(['option'], function (err, result) {
+
+        if (result.option == 2)
+            process.exit();
+        else if (result.option == 1) {
+            prompt.get(['lowerBound', 'upperBound'], function (err, result) {
+                var result = calcSumAvg(result.lowerBound, result.upperBound, arr);
+                console.log("Result Object : " + JSON.stringify(result));
+                if (result instanceof Object || result == undefined)
+                    calcMean(arr);
+            });
+        }
+        else
+        {
+            console.log("You have entered a wrong option");
+            calcMean(arr)
+
+        }
+        })
+
+    }
 
 function calcSumAvg(lowerBound, upperBound, arr) {
 
@@ -108,6 +138,11 @@ function calcSumAvg(lowerBound, upperBound, arr) {
 }
 
 
+
 module.exports.GeneratePrimeNumbers = GeneratePrimeNumbers;
+module.exports.calcMean = calcMean;
+module.exports.calcSumAvg = calcSumAvg;
+
+
 
 
