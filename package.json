@@ -21,5 +21,8 @@
     "mocha": "^3.5.0",
     "prompt": "^1.0.0",
     "redis": "^2.8.0"
-  }
+  },
+  "scripts": {
+  "test": "node ./node_modules/mocha/bin/mocha"
+}
 }

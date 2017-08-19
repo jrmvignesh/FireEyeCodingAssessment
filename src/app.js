@@ -21,7 +21,7 @@ client.flushdb( function (err, succeeded) {
 var prev = 0; var sum =0;
 
 
-function generatePrimeNumbers(integer) {
+function GeneratePrimeNumbers(integer) {
 
     if(integer <= 1)
         return 0;
@@ -45,7 +45,7 @@ function generatePrimeNumbers(integer) {
 
 }
 
-generatePrimeNumbers(Number(process.argv.slice(2)));
+GeneratePrimeNumbers(Number(process.argv.slice(2)));
 
 var numList = [];var sumList = [];
  client.lrange('myList', 0, -1, function (error, items) {
@@ -108,6 +108,6 @@ function calcSumAvg(lowerBound, upperBound, arr) {
 }
 
 
-
+module.exports.GeneratePrimeNumbers = GeneratePrimeNumbers;
 
 

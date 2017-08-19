@@ -21,8 +21,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="68" column="24" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+            <state relative-caret-position="248">
+              <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -31,11 +31,9 @@
       <file leaf-file-name="app_test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/app_test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#44#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="264">
+              <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,6 +135,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FireEye" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FireEye" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -293,18 +305,18 @@
       <option name="presentableId" value="Default" />
       <updated>1502574574540</updated>
       <workItem from="1502574575767" duration="4598000" />
-      <workItem from="1502775487910" duration="29912000" />
+      <workItem from="1502775487910" duration="37753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34510000" />
+    <option name="totallyTimeSpent" value="42351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12916666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31822917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -391,19 +403,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="68" column="24" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+        <state relative-caret-position="248">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/app_test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="264">
+          <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
